@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Jost:wght@300;400;600;900&family=Outfit:wght@500&family=Pixelify+Sans&family=Roboto:wght@300;400;500;700;900&family=Space+Mono&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -7,21 +10,76 @@
     --white: #fff;
     --black: #000;
     --accent-color: #df6400;
+    --hover-button-color: #f7f7f7;
     background-color: var(--bg-color);
 }
 
+:root {
+    font-family: 'Jost', sans-serif;
+}
+button {
+    padding: 5px;
+    color: var(--black);
+    border: solid 1px var(--black);
+    background-color: var(--white);
+}
+button:hover {
+    background-color: var(--hover-button-color);
+    cursor: pointer;
+}
+button:active {
+    color: var(--black);
+    background-color: var(--hover-button-color);
+}
+
 .content {
+    background-color: var(--white);
     max-width: 1100px;
     margin: 15px auto;
-    background-color: var(--white);
     box-shadow: 0px 0px 10px var(--shadow-color);
 }
 
 .banner {
+    position: relative;
     height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header {
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    transform: translate(-50%, 0);
+}
+
+.banner-content{
+    margin: 0 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-button {
+    width: 180px;
+    height: 50px;
+}
+
+.banner-arrow-down {
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    text-align: center;
+    transform: translate(-50%, 0);
+    animation: top-down ease-out 0.7s infinite alternate;
+}
+@keyframes top-down {
+  from {height: 2%}
+  to {height: 5%}
 }
 
 .list {
     height: 500px;
     color: var(--accent-color);
+    background-color: inherit;
 }
