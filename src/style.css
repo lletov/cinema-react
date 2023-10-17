@@ -36,7 +36,7 @@ button:active {
 .content {
     background-color: var(--white);
     max-width: 1100px;
-    margin: 10px auto;
+    margin: 10px 15px;
     padding: 0px 20px;
     box-shadow: 0px 0px 10px var(--shadow-color);
 }
@@ -82,8 +82,32 @@ button:active {
 }
 
 .list {
-    height: 500px;
     margin: inherit;
+}
+
+.tab {
+    margin-bottom: 25px;
+}
+
+.tab-button {
+    padding: 20px;
+    font-size: 20px;
+    letter-spacing: 3px;
+    border: solid 1px var(--accent-color);
+    color: var(--accent-color);
+}
+
+.tab-button-active {
+    padding: 20px;
+    font-size: 20px;
+    letter-spacing: 3px;
+    border: solid 1px var(--accent-color);
+    color: var(--white);
+    background-color: var(--accent-color);
+}
+.tab-button-active:hover {
+    cursor: auto;
+    background-color: var(--accent-color);
 }
 
 .movie-row {
@@ -126,4 +150,6 @@ button:active {
 .movie-row-tickets-btn {
     width: 200px;
     height: 50px;
+    font-size: 18px;
+    letter-spacing: 2px;
 }
