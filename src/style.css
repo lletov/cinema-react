@@ -88,15 +88,16 @@ button:active {
 
 .movie-row {
     display: flex;
+    margin-bottom: 10px;
 }
 
 .movie-row img {
-    height: 250px;
+    max-height: 300px;
 }
 
 .movie-row-text {
-    margin: 0px 40px 0px 20px;
-    
+    margin: 0px 0px 0px 20px;
+
 }
 
 .movie-row-desc {
@@ -104,10 +105,25 @@ button:active {
     color: var(--grey-text);
 }
 
-.movie-row-buttons {
+.movie-row-sessions {
+    margin: 20px 0px;
     display: flex;
-    flex-direction: column;
-    min-width: 200px;
-    justify-content: center;
-    row-gap: 20px;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.times-today-row {
+    display: flex;
+    margin-top: 10px;
+}
+
+.time {
+    padding: 5px;
+    margin-right: 20px;
+    border: solid 2px var(--accent-color);
+}
+
+.movie-row-tickets-btn {
+    width: 200px;
+    height: 50px;
 }
