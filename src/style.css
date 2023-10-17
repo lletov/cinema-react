@@ -11,11 +11,12 @@
     --black: #000;
     --accent-color: #df6400;
     --hover-button-color: #f7f7f7;
-    background-color: var(--bg-color);
+    --grey-text: #818181;
 }
 
 :root {
     font-family: 'Jost', sans-serif;
+    background-color: var(--bg-color);
 }
 button {
     padding: 5px;
@@ -35,13 +36,15 @@ button:active {
 .content {
     background-color: var(--white);
     max-width: 1100px;
-    margin: 15px auto;
+    margin: 10px auto;
+    padding: 0px 20px;
     box-shadow: 0px 0px 10px var(--shadow-color);
 }
 
 .banner {
     position: relative;
     height: 500px;
+    margin: inherit;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -80,6 +83,31 @@ button:active {
 
 .list {
     height: 500px;
-    color: var(--accent-color);
-    background-color: inherit;
+    margin: inherit;
+}
+
+.movie-row {
+    display: flex;
+}
+
+.movie-row img {
+    height: 250px;
+}
+
+.movie-row-text {
+    margin: 0px 40px 0px 20px;
+    
+}
+
+.movie-row-desc {
+    margin: 10px 0px 20px 0px;
+    color: var(--grey-text);
+}
+
+.movie-row-buttons {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    justify-content: center;
+    row-gap: 20px;
 }
