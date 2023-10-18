@@ -51,13 +51,13 @@ export default function List() {
               <TabButton
               isActive={tab === 'today'}
               onClick={() => selectTab('today')}
-              children={'Today'}
+              children={'TODAY'}
               >
               </TabButton>
               <TabButton
               isActive={tab === 'tomorrow'}
               onClick={() => selectTab('tomorrow')}
-              children={'Tomorrow'}
+              children={'TOMORROW'}
               >
               </TabButton>
             </div>

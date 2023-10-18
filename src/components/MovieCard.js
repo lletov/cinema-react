@@ -8,7 +8,7 @@ export default function MovieCard({movie, i}) {
 
     let genreStr = movie.genre.toString().replace(',', ', ')
   
-    let maxLength = 200;
+    let maxLength = 160;
     let shortDescription;
     if (movie.description.length > maxLength) {
       let cutStr = movie.description.substring(0, maxLength);
@@ -26,8 +26,8 @@ export default function MovieCard({movie, i}) {
     
     
     return (
-      <div className={'movie-row'} style={{border: 'solid 1px'}}>
-          <img src={movie.src} alt={movie.title} />
+      <div className='movie-row'>
+          <div className='movie-row-img'><img src={movie.src} alt={movie.title} /></div>
           <div className='movie-row-text'>
             <h2>{movie.title}</h2>
             <div className='movie-row-desc'>
@@ -40,7 +40,7 @@ export default function MovieCard({movie, i}) {
             <p>{shortDescription}</p>
             <div className='movie-row-sessions'>
               <p>Sessions today: <TodayTimeline timesArray={todaySessionsList}/></p>
-              <button className='movie-row-tickets-btn'>Tickets</button>
+              <button className='movie-row-tickets-btn'>TICKETS</button>
             </div>
           </div>
       </div>
