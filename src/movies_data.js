@@ -8,7 +8,7 @@ export const movies = [{
     rating: 83,
     year: 2022,
     duration: 120+10,
-    days: [0,2,6],
+    days: [0,3,6],
     sessions: [['11:30', '13:50'], ['12:20', '19:40'], ['10:10', '22:15', '15:20']]
 }, {
     id: 1,
@@ -20,7 +20,91 @@ export const movies = [{
     rating: 93,
     year: 1994,
     duration: 120 + 22,
-    days: [0,3,6],
+    days: [0,4,6],
     sessions: [['12:10', '15:30'], ['10:20', '18:10'], ['10:50', '19:15', '23:20']]
+}, {
+    id: 2,
+    title: "Interstellar",
+    description: "When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for humans.",
+    src: './img/movies/interstellar.jpg',
+    genre: ["Adventure", "Drama", "Sci-Fi"],
+    age: 12,
+    rating: 87,
+    year: 2014,
+    duration: 120 + 49,
+    days: [1,2,5],
+    sessions: [['11:40', '15:30'], ['10:20', '14:20'], ['10:50', '21:15', '23:20']]
+}, {
+    id: 3,
+    title: "The Prestige",
+    description: "After a tragic accident, two stage magicians in 1890s London engage in a battle to create the ultimate illusion while sacrificing everything they have to outwit each other.",
+    src: './img/movies/the_prestige.jpg',
+    genre: ["Drama", "Mystery", "Sci-Fi"],
+    age: 12,
+    rating: 85,
+    year: 2006,
+    duration: 120 + 10,
+    days: [2,4,5],
+    sessions: [['12:10', '17:10'], ['10:20', '19:00'], ['10:50', '19:15', '21:20']]
+}, {
+    id: 4,
+    title: " Oppenheimer",
+    description: "The story of American scientist, J. Robert Oppenheimer, and his role in the development of the atomic bomb.",
+    src: './img/movies/oppenheimer.jpg',
+    genre: ["Biography", "Drama", "History"],
+    age: 18,
+    rating: 85,
+    year: 2023,
+    duration: 180,
+    days: [3,4,5],
+    sessions: [['12:10', '17:10'], ['10:20', '19:00'], ['10:50', '19:15', '21:20']]
+}, {
+    id: 5,
+    title: "WALL·E",
+    description: "In the distant future, a small waste-collecting robot inadvertently embarks on a space journey that will ultimately decide the fate of mankind.",
+    src: './img/movies/wall_e.jpg',
+    genre: ["Animation", "Adventure", "Family"],
+    age: 0,
+    rating: 84,
+    year: 2008,
+    duration: 60 + 38,
+    days: [1,5,6],
+    sessions: [['12:10', '17:10'], ['10:20', '19:00'], ['19:15', '21:20']]
+}, {
+    id: 6,
+    title: "Spider-Man: Into the Spider-Verse",
+    description: "Teen Miles Morales becomes the Spider-Man of his universe and must join with five spider-powered individuals from other dimensions to stop a threat for all realities.",
+    src: './img/movies/spider_man.jpg',
+    genre: ["Animation", "Adventure", "Action"],
+    age: 6,
+    rating: 84,
+    year: 2018,
+    duration: 60 + 57,
+    days: [2,4,6],
+    sessions: [['12:10', '17:10'], ['10:20', '15:00', '19:15'], ['10:50', '21:20']]
+}, {
+    id: 7,
+    title: "The hunt",
+    description: "A teacher lives a lonely life, all the while struggling over his son's custody. His life slowly gets better as he finds love and receives good news from his son, but his new luck is about to be brutally shattered by an innocent little lie.",
+    src: './img/movies/the_hunt.jpg',
+    genre: ["Drama"],
+    age: 16,
+    rating: 83,
+    year: 2012,
+    duration: 60 + 55,
+    days: [1,4,5],
+    sessions: [['12:10', '17:10'], ['10:20', '15:00', '19:15'], ['10:50', '21:20']]
+}, {
+    id: 8,
+    title: "1+1",
+    description: "After he becomes a quadriplegic from a paragliding accident, an aristocrat hires a young man from the projects to be his caregiver.",
+    src: './img/movies/1_1_2011.jpg',
+    genre: ["Biography", "Comedy", "Drama"],
+    age: 14,
+    rating: 85,
+    year: 2011,
+    duration: 60 + 52,
+    days: [1,3,4],
+    sessions: [['12:10', '17:10'], ['10:20', '15:00', '19:15'], ['10:50', '21:20']]
 }
 ]

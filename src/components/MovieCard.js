@@ -2,7 +2,7 @@ import React from 'react'
 import TodayTimeline from './TodayTimeline';
 
 export default function MovieCard({movie, i}) {
-  if (movie.days.indexOf(i)) {
+  if (movie.days.indexOf(i) != -1) {
     const todaySessionsList = movie.sessions[movie.days.indexOf(i)]
 
 
@@ -34,11 +34,12 @@ export default function MovieCard({movie, i}) {
               <p>Year: {movie.year}</p>
               <p>Genre: {genreStr}</p>
               <p>Duration: {movie.duration} min.</p>
-              <p>Rating: {movie.rating}</p>
+              <p>Rating: {movie.rating}/100</p>
+              <p>{movie.age}+</p>
             </div>
             <p>{shortDescription}</p>
             <div className='movie-row-sessions'>
-              {/* <p>Sessions today: <TodayTimeline timesArray={todaySessionsList}/></p> */}
+              <p>Sessions today: <TodayTimeline timesArray={todaySessionsList}/></p>
               <button className='movie-row-tickets-btn'>Tickets</button>
             </div>
           </div>

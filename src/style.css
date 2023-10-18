@@ -82,6 +82,7 @@ button:active {
 }
 
 .list {
+    min-height: 400px;
     margin: inherit;
 }
 
