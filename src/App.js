@@ -10,40 +10,47 @@ function App() {
   let today = d.getDay();
 
   let todayMoviesList = []
+  let todaySessionsList = []
   for (let i = 0; i <movies.length; i++) {
     if (movies[i].days.indexOf(today) !== -1) {
-      todayMoviesList.push(<li>{movies[i].title}</li>)
+      todayMoviesList.push(movies[i].title)
+      todaySessionsList.push(movies[i].sessions[movies[i].days.indexOf(today)])
     }
   }
 
   const [day, setDay] = useState('None')
   const [moviesList, setMoviesList] = useState(todayMoviesList)
+  const [sessionsList, setSessionsList] = useState(todaySessionsList)
 
   function handleDayChange(n) {
     setDay(n)
     if (n === 'today') {
-      setMoviesList(actualDayData(today))
+      setMoviesList(actualDayData(today)[0])
+      setSessionsList(actualDayData(today)[1])
     }
     if (n === 'tomorrow') {
-      setMoviesList(actualDayData(today+1))
+      setMoviesList(actualDayData(today+1)[0])
+      setSessionsList(actualDayData(today+1)[1])
     }
   }
 
   function actualDayData(n){
     let todayMoviesList = []
+    let todaySessionsList = []
     for (let i = 0; i <movies.length; i++) {
       if (movies[i].days.indexOf(n) !== -1) {
         todayMoviesList.push(<li>{movies[i].title}</li>)
+        todaySessionsList.push(<li>{movies[i].sessions[movies[i].days.indexOf(n)]}</li>)
       }
     }
-    return todayMoviesList
+    return( [todayMoviesList, todaySessionsList])
   }
 
   return (
     <>
     <Banner />
     <List change={handleDayChange}/>
-    <Tickets actual_movies={moviesList} />
+    <Tickets movies={moviesList} sessions={sessionsList}/>
     </>
   );
 }
