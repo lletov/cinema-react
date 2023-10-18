@@ -2,7 +2,7 @@ import React from 'react'
 import TodayTimeline from './TodayTimeline';
 
 export default function MovieCard({movie, i}) {
-  if (movie.days.indexOf(i) != -1) {
+  if (movie.days.indexOf(i) !== -1) {
     const todaySessionsList = movie.sessions[movie.days.indexOf(i)]
 
 
@@ -45,6 +45,8 @@ export default function MovieCard({movie, i}) {
           </div>
       </div>
     )
+  } else {
+    return 
   }
  
 }

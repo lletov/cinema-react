@@ -20,27 +20,24 @@ function TabButton({ children, isActive, onClick }) {
 
 function ActiveTab({data, i}) {
   const actualMoviesList = data.map(el => <MovieCard movie={el} i={i}/>)
-
-  return (
+    return (
       <>
           {actualMoviesList}
       </>
-      
-  );
-}
+    );
+  }
 
-
-export default function List() {
+export default function List({change}) {
     const d = new Date();
     let today = d.getDay();
-
 
     const [isPending, startTransition] = useTransition();
     const [tab, setTab] = useState('today');
 
     function selectTab(nextTab) {
       startTransition(() => {
-        setTab(nextTab);      
+        setTab(nextTab); 
+        change(nextTab)      
       });
     }
 
@@ -50,7 +47,7 @@ export default function List() {
             <div className='tab'>
               <TabButton
               isActive={tab === 'today'}
-              onClick={() => selectTab('today')}
+              onClick={() => {selectTab('today')}}
               children={'TODAY'}
               >
               </TabButton>
@@ -65,19 +62,7 @@ export default function List() {
                 {tab === 'today' && <ActiveTab data={movies} i={today}/>}
                 {tab === 'tomorrow' && <ActiveTab data={movies} i={today+1}/>}
             </div>
-              {/* <MovieCard movie={movies[0]}/> */}
           </div>
       </div>
     )
   }
-
-// export default function List() {
-//   return (
-//     <div className='content'>
-//         <div className='list'>
-//             <h4>List</h4>
-//             <MovieCard movie={movies[0]}/>
-//         </div>
-//     </div>
-//   )
-// }

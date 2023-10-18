@@ -8,8 +8,8 @@ export const movies = [{
     rating: 83,
     year: 2022,
     duration: 120+10,
-    days: [0,3,6],
-    sessions: [['11:30', '13:50'], ['12:20', '19:40'], ['10:10', '22:15', '15:20']]
+    days: [0,1],
+    sessions: [['11:30', '13:50'], ['12:20', '19:40']]
 }, {
     id: 1,
     title: "The Shawshank Redemption",
@@ -20,8 +20,8 @@ export const movies = [{
     rating: 93,
     year: 1994,
     duration: 120 + 22,
-    days: [0,4,6],
-    sessions: [['12:10', '15:30'], ['10:20', '18:10'], ['10:50', '19:15', '23:20']]
+    days: [1,2],
+    sessions: [['10:20', '18:10'], ['10:50', '19:15', '23:20']]
 }, {
     id: 2,
     title: "Interstellar",
@@ -32,8 +32,8 @@ export const movies = [{
     rating: 87,
     year: 2014,
     duration: 120 + 49,
-    days: [1,2,5],
-    sessions: [['11:40', '15:30'], ['10:20', '14:20'], ['10:50', '21:15', '23:20']]
+    days: [2,3],
+    sessions: [['11:40', '15:30'], ['10:50', '21:15', '23:20']]
 }, {
     id: 3,
     title: "The Prestige",
@@ -44,8 +44,8 @@ export const movies = [{
     rating: 85,
     year: 2006,
     duration: 120 + 10,
-    days: [2,4,5],
-    sessions: [['12:10', '17:10'], ['10:20', '19:00'], ['10:50', '19:15', '21:20']]
+    days: [3,4],
+    sessions: [['10:20', '19:00'], ['10:50', '19:15', '21:20']]
 }, {
     id: 4,
     title: " Oppenheimer",
@@ -56,8 +56,8 @@ export const movies = [{
     rating: 85,
     year: 2023,
     duration: 180,
-    days: [3,4,5],
-    sessions: [['12:10', '17:10'], ['10:20', '19:00'], ['10:50', '19:15', '21:20']]
+    days: [4,5],
+    sessions: [['12:10', '17:10'], ['10:20', '19:00']]
 }, {
     id: 5,
     title: "WALL·E",
@@ -68,8 +68,8 @@ export const movies = [{
     rating: 84,
     year: 2008,
     duration: 60 + 38,
-    days: [1,5,6],
-    sessions: [['12:10', '17:10'], ['10:20', '19:00'], ['19:15', '21:20']]
+    days: [5, 6],
+    sessions: [['12:10', '17:10'], ['10:20', '19:00']]
 }, {
     id: 6,
     title: "Spider-Man: Into the Spider-Verse",
@@ -80,31 +80,7 @@ export const movies = [{
     rating: 84,
     year: 2018,
     duration: 60 + 57,
-    days: [2,4,6],
-    sessions: [['12:10', '17:10'], ['10:20', '15:00', '19:15'], ['10:50', '21:20']]
-}, {
-    id: 7,
-    title: "The hunt",
-    description: "A teacher lives a lonely life, all the while struggling over his son's custody. His life slowly gets better as he finds love and receives good news from his son, but his new luck is about to be brutally shattered by an innocent little lie.",
-    src: './img/movies/the_hunt.jpg',
-    genre: ["Drama"],
-    age: 16,
-    rating: 83,
-    year: 2012,
-    duration: 60 + 55,
-    days: [1,4,5],
-    sessions: [['12:10', '17:10'], ['10:20', '15:00', '19:15'], ['10:50', '21:20']]
-}, {
-    id: 8,
-    title: "1+1",
-    description: "After he becomes a quadriplegic from a paragliding accident, an aristocrat hires a young man from the projects to be his caregiver.",
-    src: './img/movies/1_1_2011.jpg',
-    genre: ["Biography", "Comedy", "Drama"],
-    age: 14,
-    rating: 85,
-    year: 2011,
-    duration: 60 + 52,
-    days: [1,3,4],
-    sessions: [['12:10', '17:10'], ['10:20', '15:00', '19:15'], ['10:50', '21:20']]
+    days: [6,0],
+    sessions: [['12:10', '17:10'], ['10:20', '15:00', '19:15']]
 }
 ]
