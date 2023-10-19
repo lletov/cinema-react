@@ -39,8 +39,8 @@ function App() {
     let todaySessionsList = []
     for (let i = 0; i <movies.length; i++) {
       if (movies[i].days.indexOf(n) !== -1) {
-        todayMoviesList.push(<li>{movies[i].title}</li>)
-        todaySessionsList.push(<li>{movies[i].sessions[movies[i].days.indexOf(n)]}</li>)
+        todayMoviesList.push(<p>{movies[i].title}</p>)
+        todaySessionsList.push(<>{movies[i].sessions[movies[i].days.indexOf(n)]}</>)
       }
     }
     return( [todayMoviesList, todaySessionsList])

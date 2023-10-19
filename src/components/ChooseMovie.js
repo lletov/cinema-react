@@ -6,6 +6,7 @@ export default function ChooseMovie({movies, changeMovie}) {
     function changeInd(i) {
         setInd(i)
         changeMovie(i)
+
     }
 
     function ChooseMovieButton({ children, isActive, onClick }) {
@@ -21,11 +22,18 @@ export default function ChooseMovie({movies, changeMovie}) {
         )
       }
 
+    function movieSelect(el){
+      if (el.className === 'choose-movie-btn') {
+        el.s
+      }
+      
+    }
     // const moviesList = movies.map(m => <button className='choose-movie-btn' onClick={() => {changeInd('dr'), className='choose-movie-btn active'}}>{m}</button>)
-    const moviesList = movies.map(m => <ChooseMovieButton 
+    const moviesList = movies.map((m, index) => <ChooseMovieButton 
         children={m}
         isActive={m.index}
-        onClick={() => {changeInd('dr')}}
+        // onClick={() => {changeInd(index)}}
+        onClick={() => movieSelect(this)}
         />)
     return (
         <div className='choose-movie'>
